@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudTend</title>
+    <link rel="stylesheet" href="/css/style_home.css">
+</head>
+<body>
+   <div class="header">
+    <a href="index.html" class="logo" ><img src="/image/nbglogo.png" /></a>
+    </div>
+   <div class="nav">
+        <div class="login">
+        <a href="http://localhost:4000/login">Login</a>
+    </div>
+    <div class="register">
+    <a href="http://localhost:4000/register">Register</a>
+</div>
+</div>
+
+<section>
+    <img src="/image/boy.jpg" id=" bwai" alt="boy" />
+    <h1>CloudTend enables you to track the attendance of individuals in a particular organization.
+        It helps to manage and approve leave requests, and track current attendance status.
+    </h1>
+    <a href="http://localhost:4000/login" id="btn">Explore</a>
+</section>
+<div class="secPage" id="secPage">
+</div>
+<script>
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showResult);
+      } else { 
+       window.alert(  "Geolocation is not supported by this browser.");
+      }
+    }
+    function showResult(position){
+        console.log(position.coords.latitude +"....." + position.coords.longitude)
+         if (Math.round(position.coords.latitude) == 13 && Math.round(position.coords.longitude) ==  77){
+            window.alert("Your current location: Jain University, Kanakapura")
+        }
+    else {
+        window.alert("You are not in Jain university ") 
+         window.location.href = 'http://localhost:4000/trying_to_access_from_outside_jain_university';  
+   
+  
+  
+        }
+
+    }
+
+    getLocation();
+
+    </script>
+
+
+ 
+      
+      
+    
+      
+
+</body>
+</html>

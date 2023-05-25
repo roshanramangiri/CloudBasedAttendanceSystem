@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Face Registration</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-top: 30px;
+        }
+        h2{
+            text-align: center;
+            color: #333;
+            margin-top: 5px;
+            font-size: 20px;
+        }
+        #video {
+            display: block;
+            margin: 0 auto;
+            border: 5px solid #333;
+        }
+        #capture {
+            display: block;
+            margin:10px 0px 0px 675px;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #canvas {
+            display: block;
+            margin: 15px auto;
+            border: 5px solid #333;
+        }
+        label {
+            display: block;
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+        input[type="text"] {
+            display: block;
+            margin-top: 5px;
+            padding: 5px;
+            font-size: 1.2rem;
+            border: 2px solid #333;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        #upload {
+            display: block;
+            margin: 20px auto;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Face Registration</h1>
+    <h2>Make sure to take a picture with more visible facial features.</h2>
+    <div>
+        <video id="video" width="640" height="480" autoplay></video>
+        <button id="capture">Take Photo</button>
+    </div>
+    <canvas id="canvas" width="640" height="480"></canvas>
+    <div>
+        <label for="name">Name (as per registration):</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="rollnumber">USN (as per registration):</label>
+        <input type="text" id="rollnumber" name="rollnumber"><br>
+        <button id="upload">Register Photo</button>
+    </div>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.7.16.min.js"></script>
+    <script src="/js/face_register_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #3e54ac;
+}
+.header img {
+  width: 225px;
+  height: auto;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+.login {
+  position: absolute;
+  background-color: #ecf2ff;
+  padding: 8px 8px 8px 8px;
+  left: 77%;
+  top: 6%;
+  width: 100px;
+  border-radius: 20px 0px 0px 20px;
+}
+.login a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  left: 20px;
+  box-shadow: inset;
+}
+.login:hover,
+.login a:hover {
+  background-color: #2b1055;
+  color: white;
+}
+.register {
+  position: absolute;
+  background-color: #ecf2ff;
+  padding: 8px 8px 8px 8px;
+  left: 83%;
+  top: 6%;
+  width: 100px;
+  border-radius: 0 20px 20px 0;
+}
+.register a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  right: 1px;
+}
+.register:hover,
+.register a:hover {
+  background-color: #2b1055;
+  color: white;
+}
+
+section {
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  top: 16%;
+  background-color: #bad7e9;
+  padding: 30px;
+  border-radius: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+section img {
+  float: right;
+}
+section h1 {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  top: 180px;
+  font-size: 18px;
+  font-weight: 100;
+}
+#btn {
+  text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 9px;
+  background: white;
+  color: black;
+  position: relative;
+  top: 210px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+#btn:hover {
+  background-color: #2b1055;
+  color: White;
+}

@@ -1,0 +1,99 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Login</title>
+    <link rel="stylesheet" href="/css/StudentprofStyle.css">
+</head>
+<body>
+    <!--Card class for displaying user's data from the SAVED database-->
+    <div class="card">
+        <div class="card_background_img"></div>
+        <div class="card_profile_img"></div>
+        <div class="user_details">
+            <h3><%= name %></h3>
+            <p>Computer Science & Technology</p>
+        </div>
+        <div class="card_count">
+            <div class="count">
+                <div class="fans">
+                    <h3>USN : <%= usn %></h3>
+                    <h3>Semester: <%= sem %></h3>
+                </div>
+            </div>
+             <div class="btn">Edit Profile</div>
+        </div>
+    </div>
+     <!--event_container class for displaying existing sessions-->
+    <div class="event_container">
+    <div class="search_bar"> <!--Searchbar-->
+        <div class="search">
+            <input type="text" class="searchTerm" placeholder="Search for existing sessions">
+            <button type="submit" class="searchButton">Search
+           </button>
+         </div>
+        </div>
+      
+        <div class="ExistEvent">
+            <div class="horizontal_line"></div>
+            <p>Existing sessions ⬇️</p>
+        </div>
+        <div class="events">
+        
+                <div class="E1">
+                    <form id="session1" action="/updateAttendance" method="post">
+                        <p><%= sub_code1 %><span>  |  </span><%= sub_name1 %><span>  |  </span><%= sess_time1 %> Minutes</p>
+                        <button class="joinButton">Join</button>
+                        <!-- <div class="timerContainer">
+                            <span class="stopwatch">00:00:00</span>
+                             <button class="stopButton" onclick="sendSessionData(1)">Stop</button> 
+                        </div> -->
+                    </form>
+                </div>
+                
+
+                  <div class="E2">
+                    <p ><%= sub_code2 %><span>    |    </span><%= sub_name2 %><span>  |   </span><%= sess_time2 %> Minutes</p>
+                    <button class="joinButton">Join</button>
+                    <!-- <div class="timerContainer">
+                      <span class="stopwatch">00:00:00</span>
+                       <button class="stopButton" >Stop</button>
+                    </div> -->
+                  </div>
+
+
+
+                  <div class="E3">
+                    <p><%= sub_code3 %><span>  |  </span><%= sub_name3 %><span>  |  </span><%= sess_time3 %> Minutes</p>
+                    <button class="joinButton">Join</button>
+                    <!-- <div class="timerContainer">
+                      <span class="stopwatch">00:00:00</span>
+                       <button class="stopButton" >Stop</button>
+                    </div> -->
+                  </div>
+
+
+                 <div>
+                    <input type="hidden" id="name" value="<%= name %>">
+<input type="hidden" id="usn" value="<%= usn %>">
+<input type="hidden" id="sem" value="<%= sem %>">
+<input type="hidden" id="sub_code" value="<%= sub_code1 %>">
+<input type="hidden" id="sub_name" value="<%= sub_name1 %>">
+<input type="hidden" id="sess_time" value="<%= sess_time1 %>">
+
+                 </div>
+                          
+        </div>
+
+
+        
+    </div>
+  
+    <script src="/js/studet_profile.js"></script>
+</body>
+</html>

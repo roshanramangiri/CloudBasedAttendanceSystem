@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #95bdff;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #33363b;
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 14px;
+  color: #868d9b;
+}
+
+.card {
+  float: left;
+  width: 360px;
+  height: 650px;
+  background-color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  border-radius: 8px;
+}
+
+.card_profile_img {
+  width: 120px;
+  height: 120px;
+  background-color: #868d9b;
+  background: url("/image/girl.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #ffffff;
+  border-radius: 120px;
+  margin: 0 auto;
+  margin-top: -60px;
+}
+
+.card_background_img {
+  width: 100%;
+  height: 180px;
+  background-color: #e1e7ed;
+  background: url("/image/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.user_details p {
+  margin-bottom: 20px;
+  margin-top: -5px;
+}
+
+.user_details h3 {
+  margin-top: 10px;
+}
+
+.card_count {
+  padding: 30px;
+  border-top: 1px solid #dde1e7;
+}
+
+.count {
+  display: block;
+  margin-bottom: 200px;
+}
+
+.btn {
+  padding: 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: #3e54ac;
+  color: #ffffff;
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.event_container {
+  float: right;
+  width: 68%;
+  height: 650px;
+  background-color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+.search {
+  width: 100%;
+  height: 36px;
+  position: absolute;
+  right: 0;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 1px solid #dde1e7;
+  padding: 8px;
+  height: 36px;
+  border-radius: 9px 0 0 9px;
+  outline: none;
+  color: #9dbfaf;
+}
+
+.searchTerm:focus {
+  color: grey;
+}
+.searchButton {
+  width: 90px;
+  height: 36px;
+  border: 1px solid #3e54ac;
+  background: #3e54ac;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 9px 9px 0;
+  cursor: pointer;
+  font-size: 15px;
+}
+.search_bar {
+  width: 300px;
+  height: 36px;
+  position: absolute;
+  right: 40px;
+  top: 35px;
+}
+.ExistEvent p {
+  position: absolute;
+  width: 100%;
+  top: 90px;
+  right: 165px;
+  font-size: 18px;
+  color: #33363b;
+}
+.horizontal_line {
+  width: 68%;
+  border-top: 2px solid grey;
+  position: absolute;
+  top: 80px;
+  right: 20px;
+}
+.events {
+  display: grid;
+}
+.E1 {
+  position: relative;
+  top: 110px;
+  margin-bottom: 10px;
+  padding: 10px 5px 10px 5px;
+  border: 1px solid #dde1e7;
+  width: 97%;
+  left: 20px;
+  border-radius: 0 5px 5px 0;
+  display: flex;
+}
+.E1 p {
+  position: absolute;
+  left: 10px;
+  color: #33363b;
+  padding: 3px 3px;
+}
+.E1 .joinButton {
+  position: relative;
+  left: 848px;
+  background-color: #3e54ac;
+  padding: 6px 6px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+.E2 {
+  margin: 3px 3px;
+  position: relative;
+  top: 120px;
+  margin-bottom: 10px;
+  padding: 10px 5px 10px 5px;
+  border: 1px solid #dde1e7;
+  width: 97%;
+  left: 20px;
+  border-radius: 0 5px 5px 0;
+}
+.E2 p {
+  position: absolute;
+  left: 10px;
+  color: #33363b;
+  padding: 3px 3px;
+}
+.E2 .joinButton {
+  position: relative;
+  left: 415px;
+  background-color: #3e54ac;
+  padding: 6px 6px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+.E3 {
+  margin: 3px 3px;
+  position: relative;
+  top: 130px;
+  margin-bottom: 10px;
+  padding: 10px 5px 10px 5px;
+  border: 1px solid #dde1e7;
+  width: 97%;
+  left: 20px;
+  border-radius: 0 5px 5px 0;
+}
+.E3 p {
+  position: absolute;
+  left: 10px;
+  color: #33363b;
+  padding: 3px 3px;
+}
+.E3 .joinButton {
+  position: relative;
+  left: 415px;
+  background-color: #3e54ac;
+  padding: 6px 6px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+
+.E1 .session-info {
+  font-weight: bold;
+}
+
+
+.E2 .session-info {
+  font-weight: bold;
+}
+
+
+.E3 .session-info {
+  font-weight: bold;
+}
+
+.E1 .stopwatch{
+  position: relative;
+  left: 415px;
+  color: red;
+}
+
+.E1 .stopButton{
+  position: relative;
+  left: 420px;
+  background-color: #3e54ac;
+  padding: 6px 6px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.E2 .stopwatch{
+  position: relative;
+ 
+  color: red;
+}
+
+.E2 .stopButton{
+  position: relative;
+
+  background-color: #3e54ac;
+  padding: 6px 6px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}

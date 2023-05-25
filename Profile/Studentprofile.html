@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Login</title>
+    <link rel="stylesheet" href="/css/StudentprofStyle.css">
+</head>
+<body>
+    <!--Card class for displaying user's data from the SAVED database-->
+    <div class="card">
+        <div class="card_background_img"></div>
+        <div class="card_profile_img"></div>
+        <div class="user_details">
+            <h3><%= name %></h3>
+            <p>Computer Science & Technology</p>
+        </div>
+        <div class="card_count">
+            <div class="count">
+                <div class="fans">
+                    <h3>USN :<%= usn %> </h3>
+                    <h3>Semester: <%= sem %></h3>
+                </div>
+            </div>
+             <div class="btn">Edit Profile</div>
+        </div>
+    </div>
+     <!--event_container class for displaying existing sessions-->
+    <div class="event_container">
+    <div class="search_bar"> <!--Searchbar-->
+        <div class="search">
+            <input type="text" class="searchTerm" placeholder="Search for existing sessions">
+            <button type="submit" class="searchButton">Search
+           </button>
+         </div>
+        </div>
+      
+        <div class="ExistEvent">
+            <div class="horizontal_line"></div>
+            <p>Existing sessions ⬇️</p>
+        </div>
+        <div class="events">
+            <div class="E1">
+                <p>18CE2023|Cloud Computing| 8th semester</p>
+                <button type="submit" class="joinButton">Join
+                </button>
+            </div>
+            <div class="E2"><p>18CE2024|Computer networks| 8th semester</p>
+                <button type="submit" class="joinButton">Join
+                </button></div>
+            <div class="E3"><p>18CE2025|Incident response| 8th semester</p>
+                <button type="submit" class="joinButton">Join
+                </button></div>
+        </div>
+    </div>
+</body>
+</html>

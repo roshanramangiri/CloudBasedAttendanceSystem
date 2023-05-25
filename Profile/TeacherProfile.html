@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create session</title>
+    <link rel="stylesheet" href="/css/TeacherprofStyle.css">
+</head>
+<body>
+    <!--Card class for displaying user's data from the SAVED database-->
+    <div class="card">
+        <div class="card_background_img"></div>
+        <div class="card_profile_img"></div>
+        <div class="user_details">
+            <h3>Teacher Name</h3>
+            <p>Teacher</p>
+        </div>
+        <div class="card_count">
+            <div class="count">
+                <div class="fans">
+                    <h3>Cloudtend Id: 123456789</h3>
+                    <h3>Computer Science Department</h3>
+                </div>
+            </div>
+             <div class="btn">Edit Profile</div>
+        </div>
+    </div>
+     <!--event_container class for displaying existing sessions-->
+    <div class="event_container">
+    <div class="search_bar"> <!--Searchbar-->
+        <div class="form">
+            <div class="title">Create<br> a session <br> for the students!</div>
+            <div class="subtitle">Fill the details below and click on create to start a new session.</div>
+            <div class="input-container_ic1">
+                <label for="subjectCode" class="placeholder">Subject Code: </label>
+                <input id="subjectCode" class="input" type="text" placeholder="18CE00CE" />
+            </div>
+            <div class="input-container_ic2">
+                <label for="subject" class="placeholder">Subject name:</label>
+              <input id="subject" class="input" type="text" placeholder="Cloud computing" />
+            </div>
+            <div class="input-container_ic3" >
+                <label for="timer" class="placeholder">Session time (in minutes):</>
+              <input id="timer" class="input" style="width: 315px;" type="text" placeholder="45" />
+            </div>
+            <button type="text" class="submit">Create</button>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
