@@ -87,7 +87,7 @@ AWS.config.update({
         if (response.statusCode === 200) {
           displayMessage('Success! Photo registered.');
           setTimeout(() => {
-            window.location.href = 'http://localhost:4000/verify';
+            window.location.href = 'http://13.232.104.6:4000/verify';
           }, 1000);
         } else {
           displayMessage('Registration failed. Please try again.');

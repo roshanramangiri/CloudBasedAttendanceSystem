@@ -71,7 +71,7 @@ uploadButton.addEventListener('click',() => {
 //   alert('Photo registered successfully!');
 
 //   // Navigate to login page
-//   window.location.href = 'http://localhost:4000/login'; // Replace with the path to your login page
+//   window.location.href = 'http://13.232.104.6:4000/login'; // Replace with the path to your login page
 });
 
 function uploadPhoto() {
@@ -98,7 +98,7 @@ function uploadPhoto() {
     alert('Photo registered successfully!');
 
     setTimeout(() => {
-        window.location.href = 'http://localhost:4000/login'; // Replace with the path to your login page
+        window.location.href = 'http://13.232.104.6:4000/login'; // Replace with the path to your login page
       }, 1000);
     
 }
